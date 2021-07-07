@@ -40,11 +40,32 @@
 
 <!-- 
 
+    PSEUDO SELECTORS
 div > p{
     p is direct child of div
 }
 
 div + p{
     p is next sibling of div
+}
+
+li:nth-child(3){
+    3rd child of li
+}
+li:nth-child(2n+0)
+{
+    every 2nd child
+}
+li:nth-child(odd)
+{
+    every 2nd child
+}
+input[type='text']
+{
+input where type is text
+}
+
+section::before{
+    content: "This is a content";
 }
  -->
