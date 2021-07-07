@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+            .box{
+                font-size: 50px;
+                text-align: center;
+                background-color: red;
+                color: white;
+                display: none;
+            }
+            @media(max-width: 500px) and (min-width: 300px)
+            {
+                #id-1{
+                    display: block;
+                }
+            }
+            .container{
+                text-align: center;
+                margin: 50vh;
+            }
+    </style>
+</head>
+<body>
+    <div class="box" id="id-1">phone</div>
+    <div class="box" id="id-2">phone</div>
+    <div class="box" id="id-3">phone</div>
+    <div class="box" id="id-4">phone</div>
+    <div class="box" id="id-5">phone</div>
+
+    <div class="container">
+        <p>MIDDLE</p>
+    </div>
+</body>
+</html>
+
+<!-- 
+
+div > p{
+    p is direct child of div
+}
+
+div + p{
+    p is next sibling of div
+}
+ -->

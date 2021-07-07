@@ -1,0 +1,55 @@
+*{
+    
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    background: url('../img/bg.jpg');
+}
+.left{
+    display: inline-block;
+border: 2px solid red;
+}
+.mid{
+    border: 2px solid green;
+    width: 50%;
+    margin: auto;
+}
+.right{
+    display: inline-block;
+    position:absolute;
+    top:0px;
+    right: 30px;
+    border: 2px solid yellow;
+}
+.navbar li{
+    display: inline-block;
+}
+
+.navbar li a{
+    text-decoration: none;
+    padding: 34px 23px;
+    color: white;
+}
+.navbar li a:hover{
+    text-decoration: underline;     
+    font-size: 18px;
+}
+.btn{
+    color: black;   
+    padding: 4px 10px;
+}
+.form-group input{
+    color: black;
+    width: 70%;
+    margin: 2px 10px;
+    padding: 5px 7px;
+}
+.forms{
+    width: 50%;
+    margin: 50px auto ;
+}
+#address{
+    height: 100px;
+}

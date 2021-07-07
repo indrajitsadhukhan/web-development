@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    background-color: burlywood;
+    border: 3px solid red;
+    padding: 30px;
+    margin: 30px;
+    width: 50%;
+    height: 50%;   
+}
+
+.para{
+    
+}
+#fruit{
+    float: left;
+    width: 40%;
+    margin: 5%;   
+    padding: 40px;
+    background-color: gray; 
+}
+#comp{
+    float: right;
+    width: 40%;
+    margin: 5%;   
+    padding: 40px; 
+    background-color: gray; 
+}
+#station{
+    margin: 10%;
+}
+.btn{
+    background-color: red;
+    padding: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+a:hover{
+    color: white;
+    background-color: rgb(153, 0, 0);
+}
+a:visited{
+    color: white;
+    background-color: rgb(153, 0, 0);
+}
+a:active{
+    color: white;
+    background-color: rgb(153, 0, 0);
+}

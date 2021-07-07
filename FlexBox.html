@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .container{
+            /* Initialize flex */
+            display: flex;
+            height: 500px;
+            border: 2px solid black;
+            /* Properties for flex container */
+                /* flex-direction: row;(default)
+                flex-direction: column;
+                flex-direction: row-reverse; */
+            /* flex-wrap: wrap to make responsive */
+            flex-wrap: wrap;
+            flex-flow: row wrap;
+
+            justify-content: center;
+            justify-content: space-between;
+
+            /* Vertically center */
+            /* align-items: center;
+            align-items: flex-start;
+            align-items: flex-end;
+            align-items: flex-end;
+            align-items: stretch; */
+        }
+        .item{
+            border: 2px solid red;
+            margin: 5px 15px;
+            width: 100px;
+            height: 100px;
+        }
+/* Properties for flex-items */
+#item-1{
+    /* The item with higher order number comes at end */
+    order:2;
+    /* It takes higher proportional space negative numbers are invalid */
+    flex-grow: 3;
+    
+}
+#item-2{
+    order:1;
+    /* when flex-direction is row then flex-basis controls width otherwise height */
+    flex-basis: 320px;
+}
+#item-3{
+    order:3;
+    flex-shrink: 4;
+    align-self: flex-end;
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="item-1">Box 1</div>
+        <div class="item" id="item-2">Box 2</div>
+        <div class="item" id="item-3">Box 3</div>
+        <div class="item" id="item-4">Box 4</div>
+        <div class="item" id="item-5">Box 5</div>
+    </div>
+</body>
+</html>
